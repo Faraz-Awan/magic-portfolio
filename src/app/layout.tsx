@@ -1,5 +1,6 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
+import { Analytics } from "@vercel/analytics/next"  
 
 import classNames from "classnames";
 
@@ -71,6 +72,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           defer 
           src="https://cloud.umami.is/script.js" 
           data-website-id="c13393cd-94fc-4186-a3ab-814a55e0887b"></script>
+        <Analytics />
       </head>
       <ThemeProvider>
         <ToastProvider>
