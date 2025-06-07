@@ -9,7 +9,7 @@ const person = {
   role: "Princeton MAE Grad",
   avatar: "/images/avatar.jpg",
   email: "example@gmail.com",
-  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "America/Atlanta  ", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Urdu/Hindi", "Spanish"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -63,7 +63,9 @@ const home = {
   },
   subline: (
     <>
-      I'm Faraz, a Princeton MAE Grad at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      I'm Faraz, a Princeton MAE Grad <Logo iconSrc="trademark/Princeton_seal.svg" 
+      icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.0em"}}/>  
+      at , where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -90,9 +92,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I'm a Princeton University graduate with a Bachelor of Science in 
+        Engineering for Mechanical and Aerospace Engineering and a certifcate 
+        for Robotics and Intelligent Systems. I'm passionate about aerospace 
+        and additive manufacturing. I've previously worked at the intersection 
+        of these areas as a Spacecraft Design Engineering Intern.
       </>
     ),
   },
@@ -101,41 +105,66 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Millennium Space Systems" ,
+        timeframe: "June 2023 - August 2023",
+        role: "Spacecraft Engineering Design Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Redesigned spacecraft components, tooling in SolidWorks to reduce mass 
+            by over 15% and simplify manufacturability
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Adapted existing test fixtures by modeling and 3D printing components 
+            for three-point bend test stress analysis to determine mechanical properties 
+            of propellant tubes 2 weeks ahead of schedule while saving company resources
+          </>,
+          <>
+            Validated execution and data collection of 3 vibration shock tests and 2 thermal 
+            vacuum chamber tests
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "",
             alt: "Once UI Project",
-            width: 16,
-            height: 9,
+            width: 0,   //make this non-zero when you add images
+            height: 0,   //make this non-zero when you add images
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Umbra Space",
+        timeframe: "May 2022 - August 2022",
+        role: "Modeling and Simulation Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built and documented 4 satellite models and scenarios in STK for 
+            use in simulations with global and local target decks to fulfill 
+            customer needs by providing product capability estimates 3 days 
+            ahead of schedule
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Authored Excel spreadsheet outlining over 30 technical and business 
+            performance metrics for 12 industry competitors
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Umbra Space",
+        timeframe: "May 2022 - August 2022",
+        role: "Senior Makerspace Assistant",
+        achievements: [
+          <>
+            Built and documented 4 satellite models and scenarios in STK for 
+            use in simulations with global and local target decks to fulfill 
+            customer needs by providing product capability estimates 3 days 
+            ahead of schedule
+          </>,
+          <>
+            Authored Excel spreadsheet outlining over 30 technical and business 
+            performance metrics for 12 industry competitors
           </>,
         ],
         images: [],
