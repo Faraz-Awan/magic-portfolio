@@ -7,8 +7,8 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Princeton MAE Grad",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  avatar: "/images/projects/project-01/profile-pic.png",
+  email: "hello@faraz-awan.com",
   location: "America/Atlanta  ", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Urdu/Hindi", "Spanish"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -28,14 +28,14 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
-  {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/faraz-awan1/",
+  },
+  {
+    name: "GitHub",
+    icon: "github",
+    link: "",
   },
   {
     name: "X",
@@ -55,18 +55,17 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between aerospace/mechanical/ robotics engineering and code</>,
+  headline: <>Bridging hardware and software through robotics, simulation, and system design</>,
   featured: {
-    display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    display: false,
+    title: <><strong className="ml-4">Check out my   Project Portfolio</strong></>,
+    href: "/work",
   },
   subline: (
     <>
-      I'm Faraz, a Princeton MAE Grad <Logo iconSrc="trademark/Princeton_seal.svg" 
-      icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.0em"}}/>  
-      at , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Faraz, a mechanical and aerospace engineer focused on building real-world 
+      systems—from robotic arms to orbital simulations. I use CAD, FEA, and STK to 
+      design and test how things move and interact.
     </>
   ),
 };
@@ -152,19 +151,17 @@ const about = {
         images: [],
       },
       {
-        company: "Umbra Space",
-        timeframe: "May 2022 - August 2022",
+        company: "Princeton University Makerspace",
+        timeframe: "March 2022 – May 2024",
         role: "Senior Makerspace Assistant",
         achievements: [
           <>
-            Built and documented 4 satellite models and scenarios in STK for 
-            use in simulations with global and local target decks to fulfill 
-            customer needs by providing product capability estimates 3 days 
-            ahead of schedule
+            Trained patrons how to use equipment: 3D printers, 
+            CNC mills, soldering irons, cutting plotters, and large printer
           </>,
           <>
-            Authored Excel spreadsheet outlining over 30 technical and business 
-            performance metrics for 12 industry competitors
+            Developed 3D CAD models in CREO and printed on 3D printers to serve as 
+            representative examples and decor
           </>,
         ],
         images: [],
@@ -176,17 +173,13 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Princeton University",
+        description: <>B.S.E. Mechanical and Aerospace Engineering</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
